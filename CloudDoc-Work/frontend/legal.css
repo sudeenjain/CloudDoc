@@ -1,0 +1,33 @@
+/* Styles for privacy.html and terms.html */
+:root {
+  --bg: #0f1115; --surface: #171a20; --border: #2a2f38;
+  --text: #e8eaed; --muted: #9ba2ad; --accent-text: #8db4fa;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 16px/1.7 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+a { color: var(--accent-text); }
+:focus-visible { outline: 2px solid #4c8bf5; outline-offset: 2px; }
+
+.legal-header { border-bottom: 1px solid var(--border); }
+.legal-header-inner, .legal-main, .legal-footer-inner { max-width: 720px; margin: 0 auto; padding-inline: 20px; }
+.legal-header-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; }
+.legal-brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text); font-weight: 700; text-decoration: none; }
+.legal-brand img { width: 26px; height: 26px; display: block; }
+
+.legal-main { padding-block: 36px 56px; }
+h1 { font-size: 30px; line-height: 1.2; letter-spacing: -0.015em; margin: 0 0 6px; }
+.updated { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+h2 { font-size: 19px; margin: 32px 0 8px; }
+p, ul { margin: 0 0 14px; }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.intro { color: var(--muted); }
+
+/* Unfilled placeholders are deliberately loud so they cannot ship by accident. */
+mark.todo { background: #f2c94c; color: #1a1500; padding: 0 4px; border-radius: 3px; font-weight: 600; }
+
+.legal-footer { border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+.legal-footer-inner { display: flex; gap: 18px; flex-wrap: wrap; padding-block: 18px; }
