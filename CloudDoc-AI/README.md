@@ -1,4 +1,4 @@
-# CloudDoc AI
+# CloudDoc md file
 
 College cloud-computing major project. A **local** web app where you upload PDFs and ask questions; it returns the **most relevant passages** from those PDFs with filename, page number and a similarity score.
 
